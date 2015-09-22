@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Maxim Mints's Personal Website: My Resume</title>
+		<meta name="description" content="A flipping metro style menu" />
+
+		<!-- Stylesheets -->
+		
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css" />
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<link href="./css/main.css" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript">
+			
+			function colorDivs() {
+				var divs = document.getElementsByTagName("div");
+				
+				for (i = 1; i < divs.length; i++) {
+					if (divs[i].className == "back" && divs[i - 1].className == "front") {
+						if (divs[i].style.background != null
+								&& divs[i].style.background != "") {
+							divs[i - 1].style.color = divs[i].style.background;
+						}
+						
+						if (window.getComputedStyle(divs[i]).getPropertyValue("background-color") != null
+								&& window.getComputedStyle(divs[i]).getPropertyValue("background-color") != "") {
+							divs[i - 1].style.color = window.getComputedStyle(divs[i]).getPropertyValue("background-color");
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body onload="colorDivs()">
+	
+		<nav class="header"><ul>
+			<a href="./index.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-home fa-2x"></i></div>
+				<div class="back" id="box1">Home</div>
+			</li></a>
+			
+			<a href="./about.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-user fa-2x"></i></div>
+				<div class="back" id="box2">About Me</div>
+			</li></a>
+			
+			<a href="./resume.html"><li>
+				<div class="back"><i class="fa fa-folder fa-2x"></i></div>
+				<div class="front" id="box3">Resume</div>
+			</li></a>
+			
+			<a href="./projects.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-suitcase fa-2x"></i></div>
+				<div class="back" id="box4">Projects</div>
+			</li></a>
+			
+			<a href="./contact.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-envelope fa-2x"></i></div>
+				<div class="back" id="box6">Contact</div>
+			</li></a>
+		</ul></nav>
+		
+		<div class="display_panel">
+			<a href="./files/resume.pdf" target="_blank"><li class="nav_btn">
+				<div class="front"><i class="fa fa-download fa-2x"></i></div>
+				<div class="back" id="box3">Download</div>
+			</li></a>
+			<br><br>
+			
+			<h1 align="center" >Maxim Mints</h1>
+
+<p>21 korpus 3, Novoyasenevsky Prospekt • 117593 Moscow, Russia • +1 (202) 330-1237 • mmints3@gatech.edu</p>
+
+<p><b>OBJECTIVE </b></p>
+
+<p>To obtain an internship where I can improve my programming skills.</p>
+
+<p><b>EDUCATION </b></p>
+
+<p><b>GEORGIA INSTITUTE OF TECHNOLOGY Atlanta, GA</b></p>
+
+<p><b>BS in Computer Science (Expected Graduation: June 2019) </b><i>August 2015 - Present</i></p>
+
+<p><b>School 200 Moscow, Russia</b></p>
+
+<p><b>Type of Diploma : Senior Secondary Education Certificate </b><i>September 2003 – June 2014</i></p>
+
+<p><b>EXPERIENCE </b></p>
+
+<p><b>MOST RECENT EMPLOYER (Alex’sStudio startup) Moscow, Russia</b></p>
+
+<p><b><i>Windows Phone app developer </i></b><i>Jan 2015 - Present</i></p>
+
+<p><i>A startup in Moscow, Russia focused on building apps for Windows Phone and Android. Website: alexsstudio.com</i></p>
+
+<p>· Improved my C# skills, including designing user interfaces with XAML</p>
+
+<p>· Gained mobile app development experience</p>
+
+<p>· Gained incredibly valuable teamwork experience</p>
+
+<p><b>SKILLS </b></p>
+
+<p><b>Programming: </b>C, C#, Java, Assembly (FASM), C++, PHP, Pascal, VB6, JavaScript</p>
+
+<p><b>Languages: </b>Russian – native, English – fluent</p>
+
+<p><b>Hardware: </b>Arduino programming experience</p>
+
+<p><b>Concepts: </b>OOP, software design principles, calculus up to and including Integral Calculus</p>
+
+<p><b>ACTIVITIES </b></p>
+
+<p><b>Activities: </b>Youth Commedia Dell’ Arte theater; Guitar Club at Moscow’s Pioneers Palace; Mountain-skiing club “Sevastopolsky Prospekt”</p>
+
+<p><b>Awards: </b>Regional English competition – city nominee (2011); Regional History competition – district nominee (2009); Regional Programming competition – district nominee (2011); Regional Law team competition (team leader) – finals nominee (2009)</p>
+
+<p><b>Interests: </b>Russian Bard songs; functional programming concepts; discovering history through art; getting to know people from cultures different from my own</p>
+
+		</div>
+	</body>
+</html>

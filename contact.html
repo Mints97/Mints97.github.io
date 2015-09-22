@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Maxim Mints's Personal Website: Contact Me</title>
+		<meta name="description" content="A flipping metro style menu" />
+
+		<!-- Stylesheets -->
+		
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700" rel="stylesheet" type="text/css" />
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<link href="./css/main.css" rel="stylesheet" type="text/css" />
+		
+		<script type="text/javascript">
+			
+			function colorDivs() {
+				var divs = document.getElementsByTagName("div");
+				
+				for (i = 1; i < divs.length; i++) {
+					if (divs[i].className == "back" && divs[i - 1].className == "front") {
+						if (divs[i].style.background != null
+								&& divs[i].style.background != "") {
+							divs[i - 1].style.color = divs[i].style.background;
+						}
+						
+						if (window.getComputedStyle(divs[i]).getPropertyValue("background-color") != null
+								&& window.getComputedStyle(divs[i]).getPropertyValue("background-color") != "") {
+							divs[i - 1].style.color = window.getComputedStyle(divs[i]).getPropertyValue("background-color");
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	
+	<body onload="colorDivs()">
+	
+		<nav class="header"><ul>
+			<a href="./index.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-home fa-2x"></i></div>
+				<div class="back" id="box1">Home</div>
+			</li></a>
+			
+			<a href="./about.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-user fa-2x"></i></div>
+				<div class="back" id="box2">About Me</div>
+			</li></a>
+			
+			<a href="./resume.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-folder fa-2x"></i></div>
+				<div class="back" id="box3">Resume</div>
+			</li></a>
+			
+			<a href="./projects.html"><li class="nav_btn">
+				<div class="front"><i class="fa fa-suitcase fa-2x"></i></div>
+				<div class="back" id="box4">Projects</div>
+			</li></a>
+			
+			<a href="./contact.html"><li>
+				<div class="back"><i class="fa fa-envelope fa-2x"></i></div>
+				<div class="front" id="box6">Contact</div>
+			</li></a>
+		</ul></nav>
+		
+		<div class="display_panel">
+			Contact Me:
+			<br>
+			<nav><ul>
+				<a href="mailto:max.mints@mail.ru"><li class="nav_btn">
+					<div class="front"><i class="fa fa-send fa-2x"></i></div>
+					<div class="back" id="box2">Email Me</div>
+				</li></a>
+				
+				<a href="https://www.linkedin.com/pub/maxim-mints/49/10b/27" target="_blank"><li class="nav_btn">
+					<div class="front"><i class="fa fa-linkedin fa-2x"></i></div>
+					<div class="back" style="background: #007bb6">LinkedIn</div>
+				</li></a>
+				
+				<a href="https://stackoverflow.com/users/3079266/mints97" target="_blank"><li class="nav_btn">
+					<div class="front"><i class="fa fa-stack-overflow fa-2x"></i></div>
+					<div class="back" style="background: #FF9900">StackOverflow</div>
+				</li></a>
+			</ul></nav>
+		</div>
+	</body>
+</html>

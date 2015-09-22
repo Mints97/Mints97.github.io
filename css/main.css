@@ -1,0 +1,124 @@
+body {
+    background: #ecf0f1;
+}
+
+li {
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    font-family:'Open Sans';
+    font-weight: 300;
+    -webkit-perspective:1000;
+   -moz-perspective:1000;
+    -ms-perspective:1000;
+     -o-perspective:1000;
+        perspective:1000;
+}
+
+div {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   /*transition*/
+-webkit-transition:all 0.5s ease;
+   -moz-transition:all 0.5s ease;
+     -o-transition:all 0.5s ease;
+        transition:all 0.5s ease;
+/*backface-visibility*/
+-webkit-backface-visibility:hidden;
+   -moz-backface-visibility:hidden;
+    -ms-backface-visibility:hidden;
+     -o-backface-visibility:hidden;
+        backface-visibility:hidden;
+}
+
+div.front {
+    z-index: 3;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    background: #34495e;
+}
+
+div.back {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    font-size: 22px;
+    -webkit-transform:rotateY(180deg);
+   -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+     -o-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+    background: #34495e;
+}
+
+li.nav_btn:hover > div.front {
+    z-index: 0;
+  -webkit-transform:rotateY(180deg);
+   -moz-transform:rotateY(180deg);
+    -ms-transform:rotateY(180deg);
+     -o-transform:rotateY(180deg);
+        transform:rotateY(180deg);
+}
+li.nav_btn:hover > div.back {
+    -webkit-transform:rotateY(0deg);
+   -moz-transform:rotateY(0deg);
+    -ms-transform:rotateY(0deg);
+     -o-transform:rotateY(0deg);
+        transform:rotateY(0deg);
+}
+
+nav.header {
+	background: #a9a9a9;
+    width: 100%;
+	margin-top: 50px;
+	z-index: 0;
+	position: fixed;
+}
+
+#box1 {
+    background: #e74c3c;
+}
+#box2 {
+    background: #2ecc71;
+}
+#box3 {
+    background: #3498db;
+}
+#box4 {
+    background: #f1c40f;
+}
+#box5 {
+    background: #e67e22;
+}
+#box6 {
+    background: #1abc9c;
+}
+
+a {
+	color: #fff;
+}
+
+div.display_panel {
+	z-index: -1;
+	position: absolute;
+	margin-top: 180px;
+	width: 90%;
+	height: auto;
+    color: #fff;
+    text-align: left;
+	padding: 10px;
+    line-height: 50px;
+    font-size: 20px;
+    background: #34495e;
+}
